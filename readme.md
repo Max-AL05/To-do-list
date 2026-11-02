@@ -1,6 +1,6 @@
 #  Local Task Manager
 
-Aplicación de línea de comandos (CLI) para gestionar tareas pendientes, escrita en **Python puro** y con guardado local en JSON. Sin dependencias externas.
+A command-line (CLI) application to manage a to-do list, written in **pure Python** with local JSON storage. No external dependencies.
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey)
@@ -8,38 +8,38 @@ Aplicación de línea de comandos (CLI) para gestionar tareas pendientes, escrit
 
 ---
 
-##  Características
+## ✨ Features
 
--  Menú interactivo **y** comandos escritos en una sola línea
--  Añadir, listar, completar, reabrir y borrar tareas
--  Guardado automático en `tasks.json` (junto al script)
--  Solo librería estándar de Python — cero dependencias
--  Portable: copia la carpeta a cualquier sitio y sigue funcionando
--  Funciona en Windows, macOS y Linux
+- ✅ Interactive menu **and** one-line typed commands
+- ✅ Add, list, complete, reopen and delete tasks
+- ✅ Automatic saving to `tasks.json` (next to the script)
+- ✅ Python standard library only — zero dependencies
+- ✅ Portable: copy the folder anywhere and it keeps working
+- ✅ Works on Windows, macOS and Linux
 
-##  Requisitos
+##  Requirements
 
-- Python **3.8** o superior
-- Una terminal (Windows Terminal, PowerShell, cmd, VS Code integrada…)
+- Python **3.8** or newer
+- A terminal (Windows Terminal, PowerShell, cmd, VS Code integrated terminal…)
 
-##  Instalación
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/TU-USUARIO/local-task-manager.git
+git clone https://github.com/YOUR-USERNAME/local-task-manager.git
 cd local-task-manager
 ```
 
-No hay nada que instalar. Con tener Python, funciona.
+Nothing to install. If you have Python, you're ready to go.
 
-Alternativamente, descarga el ZIP desde el botón **Code → Download ZIP** y descomprímelo.
+Alternatively, download the ZIP from the **Code → Download ZIP** button and unzip it.
 
-##  Uso
+##  Usage
 
 ```bash
 python Todo.py
 ```
 
-Se mostrará el menú y el prompt `todo>`. Puedes escribir un número del menú o un comando completo:
+The menu is displayed and the `todo>` prompt appears. You can type a menu number or a full command:
 
 ```
 ====================================
@@ -85,28 +85,28 @@ todo> exit
 Bye!
 ```
 
-### Comandos
+### Commands
 
-| Comando                    | Alias                    | Menú | Descripción                           |
-| -------------------------- | ------------------------ | :--: | ------------------------------------- |
-| `add <texto>`              | `add`                    | `1`  | Añade una tarea. Sin texto, la pide.  |
-| `list`                     |                          | `2`  | Muestra todas las tareas              |
-| `done <id>`                | `d`, `complete`          | `3`  | Marca la tarea como completada        |
-| `undo <id>`                | `u`, `reopen`            | `4`  | Marca la tarea como pendiente         |
-| `delete <id>`              | `del`, `rm`, `remove`    | `5`  | Borra la tarea (pide confirmación)    |
-| `menu`                     | `m`, `?`                 |      | Muestra la ayuda                      |
-| `exit`                     | `quit`, `q`              | `0`  | Sale del programa                     |
+| Command                    | Aliases                  | Menu | Description                              |
+| -------------------------- | ------------------------ | :--: | ---------------------------------------- |
+| `add <text>`               | `add`                    | `1`  | Add a task. Without text, prompts for it.|
+| `list`                     |                          | `2`  | Show all tasks                           |
+| `done <id>`                | `d`, `complete`          | `3`  | Mark a task as completed                 |
+| `undo <id>`                | `u`, `reopen`            | `4`  | Mark a task as not completed             |
+| `delete <id>`              | `del`, `rm`, `remove`    | `5`  | Delete a task (asks for confirmation)    |
+| `menu`                     | `m`, `?`                 |      | Show the help menu                       |
+| `exit`                     | `quit`, `q`              | `0`  | Quit the program                         |
 
-> El `<id>` de `done`, `undo` y `delete` es **opcional**. Si lo omites, el programa te muestra la lista y te pregunta qué tarea.
+> The `<id>` in `done`, `undo` and `delete` is **optional**. If omitted, the program shows the list and asks which task you mean.
 
-### Trucos
+### Tips
 
-- Las comillas se aceptan y se eliminan: `add "Buy milk"` es igual que `add Buy milk`.
-- Cierra con `Ctrl+C` en cualquier momento — se guarda antes de salir.
+- Quotes are accepted and stripped: `add "Buy milk"` is the same as `add Buy milk`.
+- Press `Ctrl+C` at any time to exit — your data is saved before quitting.
 
-##  Dónde se guardan los datos
+##  Where the data is stored
 
-Junto al script, en `tasks.json`:
+Next to the script, in `tasks.json`:
 
 ```json
 [
@@ -119,29 +119,29 @@ Junto al script, en `tasks.json`:
 ]
 ```
 
-Es un JSON legible y editable a mano. **No lo subas al repo**: ya está en `.gitignore`.
+It's a human-readable JSON file you can edit by hand. **Don't commit it to the repo** — it's already listed in `.gitignore`.
 
-##  Estructura del proyecto
+##  Project structure
 
 ```
 local-task-manager/
-├── Todo.py        # la aplicación
+├── Todo.py        # the application
 ├── README.md
 ├── LICENSE
-└── .gitignore     # (tasks.json no se versiona)
+└── .gitignore     # (tasks.json is not tracked)
 ```
 
-##  Contribuir
+##  Contributing
 
-Ideas, pull requests y sugerencias son bienvenidas. Abre un **issue** con lo que se te ocurra.
+Ideas, pull requests and suggestions are welcome. Open an **issue** with whatever you have in mind.
 
-Ideas para futuros añadidos:
-- Filtros `list --pending` / `list --done`
-- Fechas límite (`add "..." --due 2026-12-01`)
-- Prioridades
-- Búsqueda (`search <palabra>`)
-- Backend SQLite (sigue sin dependencias con `sqlite3` de la stdlib)
+Ideas for future additions:
+- Filters `list --pending` / `list --done`
+- Due dates (`add "..." --due 2026-12-01`)
+- Priorities
+- Search (`search <word>`)
+- SQLite backend (still no dependencies thanks to `sqlite3` in the stdlib)
 
-##  Licencia
+##  License
 
 [MIT](LICENSE)
