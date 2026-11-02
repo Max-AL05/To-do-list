@@ -8,21 +8,21 @@ A command-line (CLI) application to manage a to-do list, written in **pure Pytho
 
 ---
 
-## ✨ Features
+##  Features
 
-- ✅ Interactive menu **and** one-line typed commands
-- ✅ Add, list, complete, reopen and delete tasks
-- ✅ Automatic saving to `tasks.json` (next to the script)
-- ✅ Python standard library only — zero dependencies
-- ✅ Portable: copy the folder anywhere and it keeps working
-- ✅ Works on Windows, macOS and Linux
+-  Interactive menu **and** one-line typed commands
+-  Add, list, complete, reopen and delete tasks
+-  Automatic saving to `tasks.json` (next to the script)
+-  Python standard library only — zero dependencies
+-  Portable: copy the folder anywhere and it keeps working
+-  Works on Windows, macOS and Linux
 
 ##  Requirements
 
 - Python **3.8** or newer
 - A terminal (Windows Terminal, PowerShell, cmd, VS Code integrated terminal…)
 
-## 🚀 Installation
+##  Installation
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/local-task-manager.git
@@ -42,47 +42,7 @@ python Todo.py
 The menu is displayed and the `todo>` prompt appears. You can type a menu number or a full command:
 
 ```
-====================================
-         LOCAL TASK MANAGER
-====================================
-  add / 1           Add a new item
-  list / 2          Show the list
-  done / 3          Mark item as completed
-  undo / 4          Mark item as not done
-  delete / 5        Delete an item
-  menu / ?          Show this menu
-  exit / 0          Quit
 
-====================================
-todo> add Buy milk
-+ Added #1: Buy milk
-
-todo> add Call mom
-+ Added #2: Call mom
-
-todo> list
-
-  [ ]   1  Buy milk
-  [ ]   2  Call mom
-
-  0/2 completed
-
-todo> done 1
-* Completed #1: Buy milk
-
-todo> 2
-
-  [x]   1  Buy milk
-  [ ]   2  Call mom
-
-  1/2 completed
-
-todo> delete 2
-Delete #2 'Call mom'? [y/N] y
-- Deleted #2: Call mom
-
-todo> exit
-Bye!
 ```
 
 ### Commands
