@@ -1,4 +1,4 @@
-# 📝 Local Task Manager
+#  Local Task Manager
 
 Aplicación de línea de comandos (CLI) para gestionar tareas pendientes, escrita en **Python puro** y con guardado local en JSON. Sin dependencias externas.
 
@@ -8,21 +8,21 @@ Aplicación de línea de comandos (CLI) para gestionar tareas pendientes, escrit
 
 ---
 
-## ✨ Características
+##  Características
 
-- ✅ Menú interactivo **y** comandos escritos en una sola línea
-- ✅ Añadir, listar, completar, reabrir y borrar tareas
-- ✅ Guardado automático en `tasks.json` (junto al script)
-- ✅ Solo librería estándar de Python — cero dependencias
-- ✅ Portable: copia la carpeta a cualquier sitio y sigue funcionando
-- ✅ Funciona en Windows, macOS y Linux
+-  Menú interactivo **y** comandos escritos en una sola línea
+-  Añadir, listar, completar, reabrir y borrar tareas
+-  Guardado automático en `tasks.json` (junto al script)
+-  Solo librería estándar de Python — cero dependencias
+-  Portable: copia la carpeta a cualquier sitio y sigue funcionando
+-  Funciona en Windows, macOS y Linux
 
-## 📋 Requisitos
+##  Requisitos
 
 - Python **3.8** o superior
 - Una terminal (Windows Terminal, PowerShell, cmd, VS Code integrada…)
 
-## 🚀 Instalación
+##  Instalación
 
 ```bash
 git clone https://github.com/TU-USUARIO/local-task-manager.git
@@ -33,7 +33,7 @@ No hay nada que instalar. Con tener Python, funciona.
 
 Alternativamente, descarga el ZIP desde el botón **Code → Download ZIP** y descomprímelo.
 
-## 🎮 Uso
+##  Uso
 
 ```bash
 python Todo.py
@@ -104,7 +104,7 @@ Bye!
 - Las comillas se aceptan y se eliminan: `add "Buy milk"` es igual que `add Buy milk`.
 - Cierra con `Ctrl+C` en cualquier momento — se guarda antes de salir.
 
-## 💾 Dónde se guardan los datos
+##  Dónde se guardan los datos
 
 Junto al script, en `tasks.json`:
 
@@ -121,7 +121,7 @@ Junto al script, en `tasks.json`:
 
 Es un JSON legible y editable a mano. **No lo subas al repo**: ya está en `.gitignore`.
 
-## 📂 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 local-task-manager/
@@ -131,7 +131,7 @@ local-task-manager/
 └── .gitignore     # (tasks.json no se versiona)
 ```
 
-## 🤝 Contribuir
+##  Contribuir
 
 Ideas, pull requests y sugerencias son bienvenidas. Abre un **issue** con lo que se te ocurra.
 
@@ -142,6 +142,6 @@ Ideas para futuros añadidos:
 - Búsqueda (`search <palabra>`)
 - Backend SQLite (sigue sin dependencias con `sqlite3` de la stdlib)
 
-## 📜 Licencia
+##  Licencia
 
 [MIT](LICENSE)
