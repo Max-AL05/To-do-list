@@ -42,18 +42,18 @@ python Todo.py
 The menu is displayed and the `todo>` prompt appears. You can type a menu number or a full command:
 
 ```
-
+![alt text](image.png)
 ```
 
 ### Commands
 
 | Command                    | Aliases                  | Menu | Description                              |
 | -------------------------- | ------------------------ | :--: | ---------------------------------------- |
-| `add <text>`               | `add`                    | `1`  | Add a task. Without text, prompts for it.|
+| `add       `               | `add`                    | `1`  | Add a task. Without text, prompts for it.|
 | `list`                     |                          | `2`  | Show all tasks                           |
-| `done <id>`                | `d`, `complete`          | `3`  | Mark a task as completed                 |
-| `undo <id>`                | `u`, `reopen`            | `4`  | Mark a task as not completed             |
-| `delete <id>`              | `del`, `rm`, `remove`    | `5`  | Delete a task (asks for confirmation)    |
+| `done     `                | `d`, `complete`          | `3`  | Mark a task as completed                 |
+| `undo     `                | `u`, `reopen`            | `4`  | Mark a task as not completed             |
+| `delete     `              | `del`, `rm`, `remove`    | `5`  | Delete a task (asks for confirmation)    |
 | `menu`                     | `m`, `?`                 |      | Show the help menu                       |
 | `exit`                     | `quit`, `q`              | `0`  | Quit the program                         |
 
