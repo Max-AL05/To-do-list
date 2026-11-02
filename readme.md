@@ -43,6 +43,7 @@ The menu is displayed and the `todo>` prompt appears. You can type a menu number
 
 ```
 ![alt text](images/image1.png)
+![alt text](images/image2.png)
 ```
 
 ### Commands
