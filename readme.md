@@ -42,8 +42,8 @@ python Todo.py
 The menu is displayed and the `todo>` prompt appears. You can type a menu number or a full command:
 
 ```
-<img width="404" height="220" alt="Image" src="https://github.com/user-attachments/assets/e4a9d3d4-e818-4069-a308-91f34c8d7b81" />
-<img width="414" height="330" alt="Image" src="https://github.com/user-attachments/assets/4ab6f851-1ad6-40b2-9522-c182bb40d974" />
+![alt text](images/image1.png)
+![alt text](images/image2.png)
 ```
 
 ### Commands
