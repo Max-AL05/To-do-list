@@ -42,7 +42,7 @@ python Todo.py
 The menu is displayed and the `todo>` prompt appears. You can type a menu number or a full command:
 
 ```
-![alt text](image.png)
+![alt text](images/image1.png)
 ```
 
 ### Commands
